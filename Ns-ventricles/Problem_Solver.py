@@ -486,10 +486,9 @@ def VarFormMixSteadyNAVIERSTOKES2DSymGrad(param, u, v, p,q,  n, K, mesh):
 	g=Expression((gx,gy),degree=6, mu=mu,rho=rho)
 	gNb=Expression((gNbx,gNby),degree=6, mu=mu,rho=rho)
 	
-	# EQUATION  CG
 	
 	
-	# DISCONTImuOUS GALERKIN TERMS
+	# DISCONTINUOUS GALERKIN TERMS
 	if param['Spatial Discretization']['Method'] == 'DG-FEM':
 
 		# Definition of the stabilization parameters
@@ -568,7 +567,7 @@ def VarFormMixUnSteadyNAVIERSTOKES2DSymGrad(param, u, v, p,q,  n, K, mesh,dt,tim
 	# EQUATION  CG
 	
 	
-	# DISCONTImuOUS GALERKIN TERMS
+	# DISCONTINUOUS GALERKIN TERMS
 	if param['Spatial Discretization']['Method'] == 'DG-FEM':
 
 		# Definition of the stabilization parameters
@@ -648,7 +647,7 @@ def VarFormMixSteadyNAVIERSTOKES3DSymGrad(param, u, v, p,q,  n, K, mesh):
 	# EQUATION  CG
 	
 	
-	# DISCONTImuOUS GALERKIN TERMS
+	# DISCONTINUOUS GALERKIN TERMS
 	if param['Spatial Discretization']['Method'] == 'DG-FEM':
 
 		# Definition of the stabilization parameters
