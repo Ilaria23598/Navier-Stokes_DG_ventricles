@@ -15,7 +15,7 @@ import scipy.io
 
 cwd = os.getcwd()
 sys.path.append(cwd)
-sys.path.append(cwd + '/../utilities')
+sys.path.append(cwd + '/utilities')
 
 
 import ParameterFile_handler as prmh
